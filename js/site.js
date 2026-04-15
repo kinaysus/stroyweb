@@ -1,4 +1,4 @@
-﻿// Инициализация EmailJS (версия 3)
+// Инициализация EmailJS (версия 3)
 (function () {
     emailjs.init("ALNVoiU1Li7tlwKNf");
     console.log('✅ EmailJS загружен и инициализирован');
@@ -402,6 +402,34 @@ function scrollToContacts() {
         // Открываем вкладку "Соцсети" (serviceNumber === 2)
         setTimeout(() => {
             showService(2);
+        }, 500);
+    }
+}
+// Прокрутка к контактам и открытие вкладки ЗАПИСАТЬСЯ
+function scrollToForm() {
+    const contactsSection = document.getElementById('contacts');
+    if (contactsSection) {
+        contactsSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        // Закрываем текущий открытый блок если есть
+        if (currentService !== null) {
+            const expandedContent = document.getElementById('expandedContent');
+            const cards = document.querySelectorAll('.service-card');
+            expandedContent.classList.remove('active');
+            expandedContent.innerHTML = '';
+            cards.forEach(card => {
+                card.style.display = 'block';
+                card.style.transform = 'scale(1)';
+            });
+            currentService = null;
+        }
+
+        // Открываем вкладку "Соцсети" (serviceNumber === 2)
+        setTimeout(() => {
+            showService(1);
         }, 500);
     }
 }

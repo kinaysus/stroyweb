@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтройПоколение</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="css/site.css">
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">СТРОЙ<span>ПОКОЛЕНИЕ</span></div>
+        <ul class="nav-links">
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-bg"></div>
+
+        <div class="hero-glass-card" data-aos="zoom-in" data-aos-duration="1200">
+            <h1 data-aos="fade-up" data-aos-delay="200">Пространство для жизни</h1>
+            <p data-aos="fade-up" data-aos-delay="400">Для всей семьи. Любой сложности. Качественно и со смыслом</p>
+            <button class="btn-dark" data-aos="fade-up" data-aos-delay="600" onclick="scrollToContacts()">Оставить заявку</button>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="feature-item" data-aos="fade-up">
+            <h3>01</h3>
+            <p>Консультация</p>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+            <h3>02</h3>
+            <p>Утверждение проекта</p>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+            <h3>03</h3>
+            <p>Строительство</p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title" data-aos="fade-up">Наши проекты</h2>
+
+        <div class="projects-grid">
+            <!-- Проект 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="https://fin.house/wp-content/uploads/2024/02/Omatalo-Komfort2.jpg" alt="Современный дом" />
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Современный стиль</div>
+                    <h3 class="project-name">Карскасные одноэтажные</h3>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Тема1</span>
+                            <span class="detail-value">Текст1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Тема2</span>
+                            <span class="detail-value">Текст2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="https://vekovoi.ru/wa-data/public/shop/products/00/05/500/images/3315/3315.1280.png" alt="Классический дом" />
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Классика</div>
+                    <h3 class="project-name">Каркасные двухэтажные</h3>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Тема1</span>
+                            <span class="detail-value">Текст1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Тема2</span>
+                            <span class="detail-value">Текст2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="https://загород18.рф/wp-content/uploads/2021/07/17-1024x659.jpg" alt="Минималистичный дом" />
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Минимализм</div>
+                    <h3 class="project-name">Кирпичные дома</h3>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Тема1</span>
+                            <span class="detail-value">Текст1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Тема2</span>
+                            <span class="detail-value">Текст2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Проект 4 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="https://i.archi.ru/i/356498.jpg" alt="Минималистичный дом" />
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Минимализм</div>
+                    <h3 class="project-name">Барнхаус</h3>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Тема1</span>
+                            <span class="detail-value">Текст1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Тема2</span>
+                            <span class="detail-value">Текст2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Проект 5 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="https://ск-владения.рф/upload/iblock/b98/7ed1qfznu4pbelfk99442tex17b2rpgz/1.jpg" alt="Минималистичный дом" />
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Минимализм</div>
+                    <h3 class="project-name">А-фрейм</h3>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Тема1</span>
+                            <span class="detail-value">Текст1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Тема2</span>
+                            <span class="detail-value">Текст2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Проект 6 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="https://www.domamo.ru/upload/iblock/9b6/9b636eced40f5f6d75ddb6870a49d80c.jpg" alt="Минималистичный дом" />
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Минимализм</div>
+                    <h3 class="project-name">Европейские</h3>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Тема1</span>
+                            <span class="detail-value">Текст1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Тема2</span>
+                            <span class="detail-value">Текст2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="black-section" id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="content-grid">
+                <div class="text-block" data-aos="fade-right" data-aos-delay="200">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 40px;">О нас</h2>
+                    <p>«Строй Поколение» — строительная компания из Татарстана. Мы строим дома под ключ по всей России.<br>Мы возводим все виды построек. Наша философия: строим так, чтобы дом стал опорой для вашей семьи на поколения вперёд.</p>
+                </div>
+                <div class="image-placeholder" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://cdn.mos.cms.futurecdn.net/v2/t:156,l:0,cw:3000,ch:1687,q:80,w:2560/CJpTyAvNVDzHqy87Qp9JRd.jpg" class="img-base" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-services" id="contacts">
+        <h2 class="section-title" data-aos="fade-up">Способы взаимодействия с нами</h2>
+        <div class="services-grid">
+            <!-- Карточка 1: Связаться -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100" onclick="showService(1)">
+                <div class="service-title">СВЯЗАТЬСЯ</div>
+                <div class="service-subtitle">Проконсультируем и рассчитаем смету</div>
+            </div>
+
+            <!-- Карточка 2: Соцсети -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200" onclick="showService(2)">
+                <div class="service-title">СОЦСЕТИ</div>
+                <div class="service-subtitle">Подписывайтесь на нас в социальных сетях</div>
+            </div>
+
+            <!-- Карточка 3: Отзывы -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300" onclick="showService(3)">
+                <div class="service-title">ОТЗЫВЫ</div>
+                <div class="service-subtitle">Что говорят наши клиенты</div>
+            </div>
+
+            <!-- Карточка 4: Ипотека -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400" onclick="showService(4)">
+                <div class="service-title">ИПОТЕКА</div>
+                <div class="service-subtitle">Подберём удобный вариант для вашей семьи</div>
+            </div>
+        </div>
+
+        <!-- Раскрывающийся контент -->
+        <div class="expanded-content" id="expandedContent"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">СТРОЙ<span>ПОКОЛЕНИЕ</span></div>
+                <p class="footer-copyright">© 2026 СтройПоколение. Все права защищены.</p>
+                <p class="footer-protection">Любое копирование материалов сайта запрещено.</p>
+            </div>
+            <div class="footer-contacts">
+                <h4>Связь с нами</h4>
+                <p>📞 +7 (800) 555-35-35</p>
+                <p>✉️ info@стройпоколение.рф</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Основной JavaScript -->
+    <script src="js/site.js"></script>
+</body>
+</html>
